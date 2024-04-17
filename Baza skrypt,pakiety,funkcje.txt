@@ -6,15 +6,14 @@ CREATE TABLE a_f (
 ALTER TABLE a_f ADD CONSTRAINT a_f_pk PRIMARY KEY ( aktorzy_id_aktora, 
                                                     filmy_i_seriale_id_f_s );
 
-CREATE TABLE administrator ( 
+CREATE  TABLE administrator ( 
     id_administratora  INTEGER NOT NULL, 
     imie               VARCHAR2(40 CHAR), 
     nazwisko           VARCHAR2(80 CHAR), 
     nr_telefonu        INTEGER, 
     email              VARCHAR2(80 CHAR), 
     adres_kod_pocztowy VARCHAR2(50 CHAR) NOT NULL, 
-    ulica              VARCHAR2(30 CHAR) 
-);
+    ulica              VARCHAR2(30 CHAR) );
 
 ALTER TABLE administrator ADD CONSTRAINT administrator_pk PRIMARY KEY ( id_administratora );
 
